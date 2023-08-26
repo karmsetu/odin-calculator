@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="window">
+      <div class="prev-data"></div>
+      <div class="current-data"></div>
+    </div>
+    <div class="input-body">
+        <div class="num-list">
+            <button data-val="1" class="numbers" onclick="addToArray(1)">1</button>
+            <button data-val="2" class="numbers" onclick="addToArray(2)">2</button>
+            <button data-val="3" class="numbers" onclick="addToArray(3)">3</button>
+            <button data-val="4" class="numbers" onclick="addToArray(4)">4</button>
+            <button data-val="5" class="numbers" onclick="addToArray(5)">5</button>
+            <button data-val="6" class="numbers" onclick="addToArray(6)">6</button>
+            <button data-val="7" class="numbers" onclick="addToArray(7)">7</button>
+            <button data-val="8" class="numbers" onclick="addToArray(8)">8</button>
+            <button data-val="9" class="numbers" onclick="addToArray(9)">9</button>
+            <button data-val="0" class="numbers" onclick="addToArray(0)">0</button>
+        </div>
+        <div class="operator-list">
+            <button onclick="operatorFunc('+')">+</button>
+            <button onclick="operatorFunc('-')">-</button>
+            <button onclick="operatorFunc('/')">/</button>
+            <button onclick="operatorFunc(`*`)">X</button>
+            <button onclick="equalsTo()">=</button>
+        </div>
+    </div>
+  </body>
+</html>
